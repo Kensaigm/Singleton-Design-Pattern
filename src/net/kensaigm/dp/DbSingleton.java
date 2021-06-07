@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DbSingleton {
 
     private static volatile DbSingleton instance = null;
-    private static volatile conn = null;
+    private static volatile Connection conn = null;
 
     private DbSingleton(){
 
