@@ -45,7 +45,7 @@ public class DbSingletonDemo {
             statement = conn.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM Address");
 
-            System.out.println(rs);
+            System.out.println(rs.getWarnings());
             rs.close();
         } catch (SQLException e){
             e.printStackTrace();
